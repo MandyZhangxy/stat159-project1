@@ -1,0 +1,61 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title></title>
+  <style type="text/css">code{white-space: pre;}</style>
+</head>
+<body>
+<h2 id="abstract">#Abstract</h2>
+<hr />
+<p>This paper is introduction about the computational tools covered so far in Stat159 Fall2016.</p>
+<h2 id="introduction">#Introduction</h2>
+<hr />
+<p>So far we have learned bash, markdown, pandoc, github and Make. I would like to use vim as a text editor to write this paper. I would also use my own words to explain what are those computational tools and the role of those play in reproducible workflow. Next, I will introduce 5 tools in Discussion section:</p>
+<ul>
+<li>Makefile</li>
+<li>Git</li>
+<li>Github</li>
+<li>pandoc</li>
+<li>Markdown</li>
+</ul>
+<h1 id="discussion">02 Discussion</h1>
+<hr />
+<hr />
+<div class="figure">
+<img src="/Users/MandyZhang/Desktop/stat_159/project1/images/stat159-logo.png" />
+
+</div>
+<p>In this section, we will talk about five computational tools: the role they play.</p>
+<h1 id="makefile">Makefile</h1>
+<hr />
+<p>Sometimes it's very tedious to compiling many code files from different sources. <a href="https://en.wikipedia.org/wiki/Makefile"><em>Makefile</em></a> is a special format file that together with the <em>make</em> utility will help you to automatically build and manage your projects.<a href="#fn1" class="footnoteRef" id="fnref1"><sup>1</sup></a></p>
+<p>The basic makefile is composed of <em>target</em>, <em>dependencies</em>, and <em>system command</em> for example:</p>
+<pre><code>all: file1.txt file2.txt
+
+file1.txt:
+    touch file1.txt
+
+file2.txt: file1.txt
+    mkdir newdirectory
+    cd newdirectory
+    cp file1.txt file2.txt
+
+clean: 
+    rm file1.txt
+    rm file2.txt</code></pre>
+<p>In this example, <em>all</em> is a tartget in the first line, and <em>file1.txt</em>, <em>file2.txt</em> are the dependencies. <em>all</em> is the target that all the main things you want to be executed (main target first to be executed). The <em>make</em> utility will execute this target with <em>file2.txt</em> dependencies. We also see that the target <em>all</em> has only dependencies <em>file1.txt</em> and <em>file2.txt</em> but no system commands. Therefore, it has to meet all the dependencies of the called target.</p>
+<p>In this example, we also see a target called <em>clean</em>. The target <em>clean</em> does not have dependency. It is useful to have such target if you want to have a fast way to get rid of all the object files and executables. This example is basically when you run:</p>
+<pre><code>make</code></pre>
+<p>It creates a new directory and a new file1.txt, and then it copies file1 to file2 and then remove both file1.txt and file2.txt.</p>
+<p>3</p>
+<div class="footnotes">
+<hr />
+<ol>
+<li id="fn1"><p><a href="http://mrbook.org/blog/tutorials/make/" class="uri">http://mrbook.org/blog/tutorials/make/</a><a href="#fnref1">↩</a></p></li>
+</ol>
+</div>
+</body>
+</html>
