@@ -1,5 +1,15 @@
-all: paper/paper.html
+.PHONY: all
 
-paper/paper.html: paper/sections/00-abstract.md paper/sections/01-introduction.md paper/sections/02-discussion.md paper/sections/03-conclusions.md images/stat159-logo.png
-	pandoc -s paper/sections/00-abstract.md paper/sections/01-introduction.md paper/sections/02-discussion.md paper/sections/03-conclusions.md -o paper/paper.html
+MD = paper/sections/*.md
+images = images/*.png
 
+all: paper/paper.md paper/paper.html
+
+paper/paper.md: $(MD)
+	cat $(MD) > paper/paper.md
+
+paper/paper.html: paper/paper.md $(images)
+	pandoc -s paper/paper.md -o paper/paper.html
+
+clean: 
+	rm paper/paper.md paper/paper.html
