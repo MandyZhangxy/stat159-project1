@@ -7,7 +7,7 @@
     + Lecture notes
     + Help from GSI in discussion and office hour
     + Wikipedia
-    + Google (will list after)  
+    + Google 
    
    
 2. The "easy" parts:

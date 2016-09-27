@@ -242,7 +242,7 @@ Markdown is a way to write content for the web and many other formats using a to
     + Lecture notes
     + Help from GSI in discussion and office hour
     + Wikipedia
-    + Google (will list after)  
+    + Google 
    
    
 2. The "easy" parts:
