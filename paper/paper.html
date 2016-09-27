@@ -27,7 +27,7 @@
 <hr />
 <hr />
 <div class="figure">
-<img src="/Users/MandyZhang/Desktop/stat_159/project1/images/stat159-logo.png" />
+<img src="../images/stat159-logo.png" />
 
 </div>
 <p>In this section, we will talk about five computational tools: the role they play.</p>
@@ -52,11 +52,11 @@ clean:
 <p>In this example, we also see a target called <em>clean</em>. The target <em>clean</em> does not have dependency. It is useful to have such target if you want to have a fast way to get rid of all the object files and executables. This example is basically when you run:</p>
 <pre><code>make</code></pre>
 <p>It creates a new directory and a new file1.txt, and then it copies file1 to file2 and then remove both file1.txt and file2.txt.</p>
-<h2 id="git">Git<a href="#fn2" class="footnoteRef" id="fnref2"><sup>2</sup></a></h2>
+<h2 id="git">Git</h2>
 <hr />
-<p>Group Projects are a &quot;living&quot; creature. Once it's completed, it may become dormant, or it may keep evolving. <strong>Git</strong> is a free and open source distributed version control system that is designed to handle everything from small to very large projects with speed and efficiency and keeps tracks of changes over time. Git allows you track progress; allows you to revert to earlier versions (dog can't eat your homework); and Git makes it easier to collaborate with others.</p>
+<p>Group Projects are a &quot;living&quot; creature. Once it's completed, it may become dormant, or it may keep evolving. <strong>Git</strong> is a free and open source distributed version control system that is designed to handle everything from small to very large projects with speed and efficiency and keeps tracks of changes over time. Git allows you track progress; allows you to revert to earlier versions (dog can't eat your homework); and Git makes it easier to collaborate with others.<a href="#fn2" class="footnoteRef" id="fnref2"><sup>2</sup></a></p>
 <div class="figure">
-<img src="/Users/MandyZhang/Desktop/stat_159/project1/images/git-logo.png" />
+<img src="../images/git-logo.png" />
 
 </div>
 <p>Git is easy to learn and has a tiny footprint with lightning fast performance It outclasses SCM tools like Subversion, CVS, Perforce, and ClearCase with features like cheap local branching, convenient staging areas, and multiple workflows.</p>
@@ -141,7 +141,7 @@ clean:
 <hr />
 <p><em>Github</em> is a web-based Git repository hosting service. It offers all of the distributed version control and source code management (SCM) functionality of <em>Git</em> as well as adding its own features. It provides access control and several collaboration features such as bug tracking, feature requests, task management, and wikis for every projects.</p>
 <div class="figure">
-<img src="/Users/MandyZhang/Desktop/stat_159/project1/images/github-logo.png" />
+<img src="../images/github-logo.png" />
 
 </div>
 <p>Basically, you can use git command to connect your files locally and globally. For example, when you want to add something in a new repository:</p>
@@ -160,7 +160,7 @@ git push origin master
 </code></pre>
 <p>When you open your new repository online, you will find that the README file is already uploaded!</p>
 <p>For another example, if you are one member of group project and there are already many files in an existing repository. So you want to everything down to local and keep finishing your part.</p>
-<pre><code>git clone http://github.com/group-user-name/name-of-group-project
+<pre><code>git clone http://github.com/group-user-name/name-of-group-project  
 
 # if you want to add a new.txt:
 vim new.txt
@@ -230,12 +230,95 @@ git push origin master</code></pre>
 </tr>
 </tbody>
 </table>
-<p>3</p>
+<h2 id="markdown">Markdown</h2>
+<hr />
+<p>Markdown is a way to write content for the web and many other formats using a tool by the same name. It's written in plaintxt, which is exactly the sort of text we are used to writing and seeing. Text written in Markdown can be easily shared between computers, mobile phones, and people. IT's quickly becoming the writing standard for academics, scientists, writers, and many more. Websites like GitHub use Markdown to style their comments.</p>
+<div class="figure">
+<img src="../images/markdown-logo.png" />
+
+</div>
+<p><strong>Quick Guide</strong>:</p>
+<table style="width:64%;">
+<colgroup>
+<col width="26%" />
+<col width="37%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="left">Content</th>
+<th align="left">Markdown syntax</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">Header</td>
+<td align="left"><code>#header</code></td>
+</tr>
+<tr class="even">
+<td align="left"><em>word in italics</em></td>
+<td align="left"><code>_word in italics_</code></td>
+</tr>
+<tr class="odd">
+<td align="left"><strong>word in bold</strong></td>
+<td align="left"><code>**word in bold**</code></td>
+</tr>
+<tr class="even">
+<td align="left">web links for urls <a href="http://en.wikipedia.org/wiki/Markdown">Wikipedia</a></td>
+<td align="left"><code>[Wikipedia](http://en.wikipedia.org/wiki/Markdown)</code></td>
+</tr>
+<tr class="odd">
+<td align="left">horizontal rules</td>
+<td align="left"><code>***</code></td>
+</tr>
+<tr class="even">
+<td align="left">block quotes</td>
+<td align="left"><code>&gt; block quotes</code></td>
+</tr>
+</tbody>
+</table>
+<h1 id="conclusions">Conclusions</h1>
+<hr />
+<hr />
+<ol style="list-style-type: decimal">
+<li>The resources I used:
+<ul>
+<li>Lecture slides</li>
+<li>Lecture notes</li>
+<li>Help from GSI in discussion and office hour</li>
+<li>Wikipedia</li>
+<li>Google (will list after)</li>
+</ul></li>
+<li>The &quot;easy&quot; parts:
+<ul>
+<li>Creating directory</li>
+<li>git commit like push from local to master</li>
+<li>Google search related resources</li>
+<li>writing Markdown (but time consuming)</li>
+<li>Writing about Git and GitHub because I have many lecture slides</li>
+</ul></li>
+<li>The challenging parts:
+<ul>
+<li>Learning how to write Makefile</li>
+<li>Learning how to use git</li>
+</ul></li>
+<li>Things I was stuck with:
+<ul>
+<li>Writing makefile. cause I didn't know some targets such as phony, all, clean.</li>
+<li>compiling markdown files in sections into one paper.md</li>
+<li>Inserting images in markdown and trying to make all paper organized.</li>
+</ul></li>
+<li>The most time consuming part:
+<ul>
+<li>Writing markdown syntax.</li>
+</ul></li>
+<li><p>Yes, I got help from GSI when I was stuck with Makefile. She gave me some examples.</p></li>
+<li><p>I took around 10 hours to complete.</p></li>
+</ol>
 <div class="footnotes">
 <hr />
 <ol>
 <li id="fn1"><p><a href="http://mrbook.org/blog/tutorials/make/" class="uri">http://mrbook.org/blog/tutorials/make/</a><a href="#fnref1">↩</a></p></li>
-<li id="fn2"><p>2<a href="#fnref2">↩</a></p></li>
+<li id="fn2"><p><a href="http://gastonsanchez.com/stat159/lectures/05-crisis1-git-basics/" class="uri">http://gastonsanchez.com/stat159/lectures/05-crisis1-git-basics/</a><a href="#fnref2">↩</a></p></li>
 <li id="fn3"><p><a href="http://pandoc.org" class="uri">http://pandoc.org</a><a href="#fnref3">↩</a></p></li>
 </ol>
 </div>

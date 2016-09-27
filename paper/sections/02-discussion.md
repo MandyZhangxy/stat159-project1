@@ -1,7 +1,7 @@
 #Discussion
 ***
 ***
-![](/Users/MandyZhang/Desktop/stat_159/project1/images/stat159-logo.png)
+![](../images/stat159-logo.png)
 
 In this section, we will talk about five computational tools: the role they play.
 
@@ -37,13 +37,14 @@ make
 ```
 It creates a new directory and a new file1.txt, and then it copies file1 to file2 and then remove both file1.txt and file2.txt.
 
-##Git^[2]
+##Git
 ***
+Group Projects are a "living" creature. Once it's completed, it may become dormant, or it may keep evolving. **Git** is a free and open source distributed version control system that is designed to handle everything from small to very large projects with speed and efficiency and keeps tracks of changes over time. Git allows you track progress; allows you to revert to earlier versions (dog can't eat your homework); and Git makes it easier to collaborate with others.[^2]
+
 [^2]: <http://gastonsanchez.com/stat159/lectures/05-crisis1-git-basics/>
 
-Group Projects are a "living" creature. Once it's completed, it may become dormant, or it may keep evolving. **Git** is a free and open source distributed version control system that is designed to handle everything from small to very large projects with speed and efficiency and keeps tracks of changes over time. Git allows you track progress; allows you to revert to earlier versions (dog can't eat your homework); and Git makes it easier to collaborate with others. 
 
-![](/Users/MandyZhang/Desktop/stat_159/project1/images/git-logo.png)
+![](../images/git-logo.png)
 
 Git is easy to learn and has a tiny footprint with lightning fast performance It outclasses SCM tools like Subversion, CVS, Perforce, and ClearCase with features like cheap local branching, convenient staging areas, and multiple workflows. 
 
@@ -100,7 +101,7 @@ Git is easy to learn and has a tiny footprint with lightning fast performance It
 *Github* is a web-based Git repository hosting service. It offers all of the distributed version control and source code management (SCM) functionality of *Git* as well as adding its own features. 
 It provides access control and several collaboration features such as bug tracking, feature requests, task management, and wikis for every projects. 
 
-![](/Users/MandyZhang/Desktop/stat_159/project1/images/github-logo.png)
+![](../images/github-logo.png)
 
 Basically, you can use git command to connect your files locally and globally. For example, when you want to add something in a new repository:
 
@@ -124,7 +125,7 @@ When you open your new repository online, you will find that the README file is 
 
 For another example, if you are one member of group project and there are already many files in an existing repository. So you want to everything down to local and keep finishing your part.
 ````
-git clone http://github.com/group-user-name/name-of-group-project
+git clone http://github.com/group-user-name/name-of-group-project  
 
 # if you want to add a new.txt:
 vim new.txt
@@ -175,6 +176,31 @@ The command takes a MarkDown file and converts it into a html file.
 |  -o          | specify output file   |
 |  -h          | print help message    |
 |  -v          | print version 	       |
+
+
+
+
+## Markdown
+***
+Markdown is a way to write content for the web and many other formats using a tool by the same name. It's written in plaintxt, which is exactly the sort of text we are used to writing and seeing. Text written in Markdown can be easily shared between computers, mobile phones, and people. IT's quickly becoming the writing standard for academics, scientists, writers, and many more. Websites like GitHub use Markdown to style their comments. 
+
+![](../images/markdown-logo.png)  
+  
+  
+  
+  
+  
+  
+**Quick Guide**:
+  
+| Content   | Markdown syntax     | 
+|:-----------------|:-------------------------|
+| Header        | `#header`             |
+| _word in italics_ | `_word in italics_ `  |
+| **word in bold** | `**word in bold**`     |
+| web links for urls [Wikipedia](http://en.wikipedia.org/wiki/Markdown)| `[Wikipedia](http://en.wikipedia.org/wiki/Markdown)`|
+| horizontal rules | `***`|
+| block quotes | `> block quotes`|
 
 
 
