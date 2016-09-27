@@ -28,7 +28,7 @@ Next, I will introduce 5 tools in Discussion section:
 #Discussion
 ***
 ***
-![](/Users/MandyZhang/Desktop/stat_159/project1/images/stat159-logo.png)
+![](../images/stat159-logo.png)
 
 In this section, we will talk about five computational tools: the role they play.
 
@@ -71,7 +71,7 @@ Group Projects are a "living" creature. Once it's completed, it may become dorma
 [^2]: <http://gastonsanchez.com/stat159/lectures/05-crisis1-git-basics/>
 
 
-![](/Users/MandyZhang/Desktop/stat_159/project1/images/git-logo.png)
+![](../images/git-logo.png)
 
 Git is easy to learn and has a tiny footprint with lightning fast performance It outclasses SCM tools like Subversion, CVS, Perforce, and ClearCase with features like cheap local branching, convenient staging areas, and multiple workflows. 
 
@@ -128,7 +128,7 @@ Git is easy to learn and has a tiny footprint with lightning fast performance It
 *Github* is a web-based Git repository hosting service. It offers all of the distributed version control and source code management (SCM) functionality of *Git* as well as adding its own features. 
 It provides access control and several collaboration features such as bug tracking, feature requests, task management, and wikis for every projects. 
 
-![](/Users/MandyZhang/Desktop/stat_159/project1/images/github-logo.png)
+![](../images/github-logo.png)
 
 Basically, you can use git command to connect your files locally and globally. For example, when you want to add something in a new repository:
 
@@ -175,7 +175,7 @@ git push origin master
 ***
 Markdown is a way to write content for the web and many other formats using a tool by the same name. It's written in plaintxt, which is exactly the sort of text we are used to writing and seeing. Text written in Markdown can be easily shared between computers, mobile phones, and people. IT's quickly becoming the writing standard for academics, scientists, writers, and many more. Websites like GitHub use Markdown to style their comments. 
 
-![](/Users/MandyZhang/Desktop/stat_159/project1/images/markdown-logo.png)  
+![](../images/markdown-logo.png)  
   
   
   
