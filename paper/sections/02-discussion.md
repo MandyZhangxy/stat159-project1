@@ -136,20 +136,45 @@ git commit -m "added new.txt for existing repo"
 git push origin master
 ````
 
+#Pandoc
+***
+![](../images/pandoc-logo.png)  
 
+*Pandoc* is a universal document converter that can convert a document from one format to another. *Pandoc* supports many popular formats and allows users to convert documents conveniently from one to another.[^3]
 
+[^3]:<http://pandoc.org> 
 
+* Some Supported Source Document Formats       
+    + markDown
+    + reStructuredText
+    + DocBook 
+    + LaTeX
+    + docx
+    + Emacs
+    + TWiki markup  
 
+* Some Supported Output Document Formats
+    + HTML formats: XHTML, HTML5, and HTML slide shows
+    + Word processor formats: Microsoft Word docx, OpenOffice/Libre ODT, OpenDocument XML
+    + Ebooks: EPUB version 2 or 3, FictionBook2
 
+As shown above, many of the popular document formats are supported, which makes *Pandoc* a very versatile and convenient tool.  
 
+*Pandoc* is available as a commandline too which allows users to package a series of commands into a make file. The following is an example of a pandoc command:
 
+`pandoc -s paper/paper.md -o paper/paper.html`
 
+The command takes a MarkDown file and converts it into a html file.
 
-
-
-
-
-
+*Pandoc* commands make use of various command flags to customize the command.  
+ 
+| Command Flag | Functionalities       | 
+|:-------------|----------------------:|
+|  -t          | specify output format |
+|  -s          | specify source file   |
+|  -o          | specify output file   |
+|  -h          | print help message    |
+|  -v          | print version 	       |
 
 
 

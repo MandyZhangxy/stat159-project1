@@ -170,12 +170,73 @@ git add new.txt
 git commit -m &quot;added new.txt for existing repo&quot;
 
 git push origin master</code></pre>
+<h1 id="pandoc">Pandoc</h1>
+<hr />
+<div class="figure">
+<img src="../images/pandoc-logo.png" />
+
+</div>
+<p><em>Pandoc</em> is a universal document converter that can convert a document from one format to another. <em>Pandoc</em> supports many popular formats and allows users to convert documents conveniently from one to another.<a href="#fn3" class="footnoteRef" id="fnref3"><sup>3</sup></a></p>
+<ul>
+<li>Some Supported Source Document Formats
+<ul>
+<li>markDown</li>
+<li>reStructuredText</li>
+<li>DocBook</li>
+<li>LaTeX</li>
+<li>docx</li>
+<li>Emacs</li>
+<li>TWiki markup</li>
+</ul></li>
+<li>Some Supported Output Document Formats
+<ul>
+<li>HTML formats: XHTML, HTML5, and HTML slide shows</li>
+<li>Word processor formats: Microsoft Word docx, OpenOffice/Libre ODT, OpenDocument XML</li>
+<li>Ebooks: EPUB version 2 or 3, FictionBook2</li>
+</ul></li>
+</ul>
+<p>As shown above, many of the popular document formats are supported, which makes <em>Pandoc</em> a very versatile and convenient tool.</p>
+<p><em>Pandoc</em> is available as a commandline too which allows users to package a series of commands into a make file. The following is an example of a pandoc command:</p>
+<p><code>pandoc -s paper/paper.md -o paper/paper.html</code></p>
+<p>The command takes a MarkDown file and converts it into a html file.</p>
+<p><em>Pandoc</em> commands make use of various command flags to customize the command.</p>
+<table>
+<thead>
+<tr class="header">
+<th align="left">Command Flag</th>
+<th align="right">Functionalities</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">-t</td>
+<td align="right">specify output format</td>
+</tr>
+<tr class="even">
+<td align="left">-s</td>
+<td align="right">specify source file</td>
+</tr>
+<tr class="odd">
+<td align="left">-o</td>
+<td align="right">specify output file</td>
+</tr>
+<tr class="even">
+<td align="left">-h</td>
+<td align="right">print help message</td>
+</tr>
+<tr class="odd">
+<td align="left">-v</td>
+<td align="right">print version</td>
+</tr>
+</tbody>
+</table>
 <p>3</p>
 <div class="footnotes">
 <hr />
 <ol>
 <li id="fn1"><p><a href="http://mrbook.org/blog/tutorials/make/" class="uri">http://mrbook.org/blog/tutorials/make/</a><a href="#fnref1">↩</a></p></li>
 <li id="fn2"><p>2<a href="#fnref2">↩</a></p></li>
+<li id="fn3"><p><a href="http://pandoc.org" class="uri">http://pandoc.org</a><a href="#fnref3">↩</a></p></li>
 </ol>
 </div>
 </body>
