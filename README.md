@@ -1,7 +1,6 @@
 # Project 1
 
 Author: Xinyu Zhang
-SID: 22707687
 
 This directory contains the two folders: images/ and paper/.  
 
